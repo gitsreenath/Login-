@@ -137,9 +137,9 @@ form{
   transform: translate(-50%,-50%);
   border: 1px solid white;
   padding: 25px;
-  border-radius: 30px;
-  color: white;
-  // text-align: center;
+  border-radius: 8px;
+  color: #1e1717;
+  background: #ffffffbd;
   h3{
     text-align: center;
     margin-bottom: 20px;
@@ -153,13 +153,27 @@ form{
     
     input{
       padding: 5px;
-      border: none;
+      border:1px solid transparent;
       border-radius: 5px;
       background-color: whitesmoke;
+      
     }
 input:focus{
   outline: none;
 }
+.error-msg{
+  color: red;
+}
+input.error{
+  // text-decoration:1px dotted red;
+  // background-color: white;
+  border:1px solid red;
+}
+input.success{
+ 
+  border:1px solid green;
+}
+
   }
   button{
     background-color: blue;

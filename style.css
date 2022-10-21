@@ -143,8 +143,9 @@
   transform: translate(-50%, -50%);
   border: 1px solid white;
   padding: 25px;
-  border-radius: 30px;
-  color: white;
+  border-radius: 8px;
+  color: #1e1717;
+  background: rgba(255, 255, 255, 0.7411764706);
 }
 .container form h3 {
   text-align: center;
@@ -158,12 +159,21 @@
 }
 .container form .form-container input {
   padding: 5px;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 5px;
   background-color: whitesmoke;
 }
 .container form .form-container input:focus {
   outline: none;
+}
+.container form .form-container .error-msg {
+  color: red;
+}
+.container form .form-container input.error {
+  border: 1px solid red;
+}
+.container form .form-container input.success {
+  border: 1px solid green;
 }
 .container form button {
   background-color: blue;
